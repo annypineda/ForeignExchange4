@@ -5,14 +5,48 @@
              x:Class="ForeignExchange4.MainPage">
 
         <StackLayout 
-            Padding="10,30,10,10">
-      
+                Padding="10,30,10,10">
             <Label 
                 HorizontalOptions="Center"
                 FontSize="Large"
                 Text="Foreign Exchange">
-                
-            </Label>    
+            </Label>
+            <Label 
+                Text="Pesos:">                
+            </Label>
+            <Entry
+                x:Name="PesosEntry"
+                Keyboard="Numeric"
+                Placeholder="Enter the amount in pesos...">                
+            </Entry>
+            <Button
+                x:Name="ConvertButton"
+                Text="Convert">            
+            </Button>
+        <Label 
+                Text="Dollars:">
+        </Label>
+        <Entry
+                x:Name="DollarEntry"
+                IsEnabled="False"
+                Placeholder="Value in dollars">
+        </Entry>
+        <Label 
+                Text="Euros:">
+        </Label>
+        <Entry
+                x:Name="EurosEntry"
+                IsEnabled="False"
+                Placeholder="Value in euros">
+        </Entry>
+        <Label 
+                Text="Pounds:">
+        </Label>
+        <Entry
+                x:Name="PoundsEntry"
+                IsEnabled="False"
+                Placeholder="Value in Pounds">
+        </Entry>
     </StackLayout>
         
 
